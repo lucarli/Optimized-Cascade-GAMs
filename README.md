@@ -8,4 +8,4 @@ This repository is used to store the MOPSO based hyperparameters optimization fo
 
 ## Acknowledgments
 
-* Thank you for ICA PUC Rio for BI Master program.
+* Thank you for CCE and ICA PUC Rio for BI Master program.
