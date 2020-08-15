@@ -40,7 +40,7 @@ cost <- function(x){
     
     TPR<-x[2]/100  #0.72
     
-    errDist_LinkFunc = c("binomial", "gaussian", "poisson", "quasi", "quasibinomial", "quasipoisson")[round(x[3])]
+    errDist_LinkFunc = c("binomial", "binomial", "binomial", "binomial", "binomial", "binomial")[round(x[3])]
     
     pDmin<--1
     
