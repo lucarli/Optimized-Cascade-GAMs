@@ -50,7 +50,7 @@ summary(fullGam.object)
 
 #----------------------------------
 
-reducedGam.object <- gam(V25 ~ V1 + V2 + V3 + V5 + V6 + V11 + V14 + V16 + V18 + V19, data=train, family="gaussian")
+reducedGam.object <- gam(V25 ~ V1 + V2 + V3 + V5 + V6 + V11 + V14 + V16 + V18 + V19, data=train, family="binomial")
 
 prevs <- (predict(reducedGam.object, type="response", test) > 0.5)
 
