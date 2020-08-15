@@ -53,7 +53,7 @@ train<-subComplete[train.idx,c("V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "
 
 test<-subComplete[-train.idx,c("V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16")]
 
-fullGam.object <- gam(V16 ~ V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10 + V11 + V12 + V13 + V14 + V15, data=train, family="gaussian")
+fullGam.object <- gam(V16 ~ V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10 + V11 + V12 + V13 + V14 + V15, data=train, family="binomial")
 
 prevs <- (predict(fullGam.object, type="response", test) > 0.5)
 
