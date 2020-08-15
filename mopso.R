@@ -4,7 +4,7 @@ library(mopsocd)
 varcount <- 3
 fncount <- 9
 lbound <- c(2,75,1)
-ubound <- c(5,85,6)
+ubound <- c(5,85,2)
 optmax <- 1
 optmin <- 0
 
@@ -20,7 +20,7 @@ print(mopsoCredit$objfnvalues)
 
 ## Plot 
 plot(mopsoCredit$objfnvalues[,1],mopsoCredit$objfnvalues[,2], 
-     main='Soluções encontradas pelo MO-PSO (Confidential Credit Data Set)',
+     main='SoluÃ§Ãµes encontradas pelo MO-PSO (Confidential Credit Data Set)',
      xlab='PPV',
      ylab='NPV')
 
