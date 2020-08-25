@@ -98,7 +98,7 @@ cost <- function(x){
     
     reducedGam.object = gamList[[ind]]
     
-    cutOff <- cutOffList[[ind]]
+    pCut <- cutOffList[[ind]]
     
     prevs <- ifelse(predict(reducedGam.object, type="response", test) > pCut, 1, 0)
     
